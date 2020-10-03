@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<Body>
+    <!--Fontawesome-->
+    <i class="fab fa-twitter"></i>
+    <i class="fas fa-map-marker-alt"></i>
+    <i class="fas fa-users"></i>
+    <i class="fas fa-copyright"></i>
+
+    <!--bootstrap with forms-->
+    <!--fixed container (container), Flexible containers (container fluid)-->
+    <div class="container">
+        <h1>Web Forms using Bootstrap</h1>
+        <!--input type attribute - name, id, placeholder, required, size, disabled, pattern-->
+
+        <form action="" method="POST"> 
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+
+            <div>
+                <label for="email" >Email</label>
+                <input type="email" name="email" id="">
+            </div>
+            
+            <div>
+                <label for="password" >Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="city">Your State</label>
+                <select name="city" id="city">
+                    <option value="1">Seattle</option>
+                    <option value="2">Tacoma</option>
+                    <option value="3">Bellingham</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="conditions">Agree to terms and conditions</label>
+                <input type="radio" name="conditions" id="conditions">
+            </div>
+            
+            <div>
+                <label for="remember">Remember Password</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</Body>
+
+</html>
